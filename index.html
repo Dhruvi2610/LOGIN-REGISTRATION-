@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <div id="registerFormContainer" class="form-wrapper">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="registerUsername">Username (Email):</label>
+                    <input type="email" id="registerUsername" name="username" required>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+                <p id="registerMessage"></p>
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+
+            <div id="loginFormContainer" class="form-wrapper hidden">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username (Email):</label>
+                    <input type="email" id="loginUsername" name="username" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p id="loginMessage"></p>
+                <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
